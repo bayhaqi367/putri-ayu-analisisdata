@@ -6,7 +6,7 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-bike_sharing_df = pd.read_csv("main_data.csv")
+bike_sharing_df = pd.read_csv("dashboard/main_data.csv")
 bike_sharing_df['dteday'] = pd.to_datetime(bike_sharing_df['dteday'])
 bike_sharing_df['year'] = bike_sharing_df['dteday'].dt.year
 
